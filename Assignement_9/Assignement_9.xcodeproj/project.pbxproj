@@ -13,6 +13,7 @@
 		EEA75DCA25EED99200BAE245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA75DC825EED99200BAE245 /* Main.storyboard */; };
 		EEA75DCC25EED99300BAE245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA75DCB25EED99300BAE245 /* Assets.xcassets */; };
 		EEA75DCF25EED99300BAE245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA75DCD25EED99300BAE245 /* LaunchScreen.storyboard */; };
+		EEA75DD825EEDFFA00BAE245 /* NameNickStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA75DD725EEDFFA00BAE245 /* NameNickStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EEA75DCB25EED99300BAE245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEA75DCE25EED99300BAE245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEA75DD025EED99300BAE245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEA75DD725EEDFFA00BAE245 /* NameNickStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameNickStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EEA75DC225EED99200BAE245 /* AppDelegate.swift */,
 				EEA75DC425EED99200BAE245 /* SceneDelegate.swift */,
 				EEA75DC625EED99200BAE245 /* ViewController.swift */,
+				EEA75DD725EEDFFA00BAE245 /* NameNickStruct.swift */,
 				EEA75DC825EED99200BAE245 /* Main.storyboard */,
 				EEA75DCB25EED99300BAE245 /* Assets.xcassets */,
 				EEA75DCD25EED99300BAE245 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				EEA75DC725EED99200BAE245 /* ViewController.swift in Sources */,
 				EEA75DC325EED99200BAE245 /* AppDelegate.swift in Sources */,
+				EEA75DD825EEDFFA00BAE245 /* NameNickStruct.swift in Sources */,
 				EEA75DC525EED99200BAE245 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
