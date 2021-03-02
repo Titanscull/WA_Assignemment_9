@@ -60,14 +60,38 @@
 			children = (
 				EEA75DC225EED99200BAE245 /* AppDelegate.swift */,
 				EEA75DC425EED99200BAE245 /* SceneDelegate.swift */,
-				EEA75DC625EED99200BAE245 /* ViewController.swift */,
-				EEA75DD725EEDFFA00BAE245 /* NameNickStruct.swift */,
-				EEA75DC825EED99200BAE245 /* Main.storyboard */,
+				EEA75DDA25EEE02700BAE245 /* Model */,
+				EEA75DDB25EEE03000BAE245 /* View */,
+				EEA75DDC25EEE03C00BAE245 /* Controller */,
 				EEA75DCB25EED99300BAE245 /* Assets.xcassets */,
 				EEA75DCD25EED99300BAE245 /* LaunchScreen.storyboard */,
 				EEA75DD025EED99300BAE245 /* Info.plist */,
 			);
 			path = Assignement_9;
+			sourceTree = "<group>";
+		};
+		EEA75DDA25EEE02700BAE245 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEA75DD725EEDFFA00BAE245 /* NameNickStruct.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EEA75DDB25EEE03000BAE245 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEA75DC825EED99200BAE245 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EEA75DDC25EEE03C00BAE245 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EEA75DC625EED99200BAE245 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
