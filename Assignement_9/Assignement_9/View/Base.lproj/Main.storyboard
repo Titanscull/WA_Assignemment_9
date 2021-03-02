@@ -40,10 +40,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IFC-6q-paW" secondAttribute="trailing" id="tY0-uD-T5a"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="cellView" destination="gkh-Vp-IL8" id="s5a-la-XuJ"/>
-                        <outlet property="mainTableView" destination="IFC-6q-paW" id="mWn-uG-Te2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

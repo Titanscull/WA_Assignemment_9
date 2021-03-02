@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct NameNickStruct {
+    var name: String
+    var nickName: String
+}
+
