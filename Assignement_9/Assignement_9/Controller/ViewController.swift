@@ -25,12 +25,34 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        
+        mainTableView.dataSource = self
         
     }
 
-    
-    
+}
 
+
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return students.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "WA Group 84 Students"
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "nameCell", for: indexPath)
+        // MAIN LABEL
+        cell.textLabel?.text = "Section: \(indexPath.section), IndePath.row:\(indexPath.row)"
+        
+        cell.detailTextLabel?.text = "\(indexPath.row)"
+        // SECONDARY LABEL
+//        cell.detailTextLabel
+//            students[indexPath.row].name // students[indexPath.row].slackName
+        return cell
+    }
+    
+    
 }
 
