@@ -11,29 +11,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mainTableView: UITableView!
     
-    var students = [
-        NameNickStruct(name: "Artem", nickName: "@bazinga"),
-        NameNickStruct(name: "Evgeniy", nickName: "Petrovskyi"),
-        NameNickStruct(name: "Maksym", nickName: "Blashko"),
-        NameNickStruct(name: "Oleksandr", nickName: "Oliinyk"),
-        NameNickStruct(name: "Viktor", nickName: "@viktorqube"),
-        NameNickStruct(name: "Admin", nickName: "@service"),
-        NameNickStruct(name: "Dmytro", nickName: "@dmytro")
-    ]
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-//        students.sort(by: { $0.name <= $1.name })
         
         mainTableView.dataSource = self
-        
-        
+        mainTableView.tableFooterView = UIView()
         
     }
-
+    
 }
 
 
@@ -49,17 +34,12 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "nameCell", for: indexPath)
         
-            students.sort(by: { $0.name <= $1.name })
+        students.sort(by: { $0.name < $1.name })
         
-        // MAIN LABEL
         cell.textLabel?.text = students[indexPath.row].name
         
         cell.detailTextLabel?.text = students[indexPath.row].nickName
         
-        
-        // SECONDARY LABEL
-//        cell.detailTextLabel
-//            students[indexPath.row].name // students[indexPath.row].slackName
         return cell
     }
     

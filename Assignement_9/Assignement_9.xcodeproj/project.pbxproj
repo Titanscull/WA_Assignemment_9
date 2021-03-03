@@ -14,6 +14,7 @@
 		EEA75DCC25EED99300BAE245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA75DCB25EED99300BAE245 /* Assets.xcassets */; };
 		EEA75DCF25EED99300BAE245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA75DCD25EED99300BAE245 /* LaunchScreen.storyboard */; };
 		EEA75DD825EEDFFA00BAE245 /* NameNickStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA75DD725EEDFFA00BAE245 /* NameNickStruct.swift */; };
+		EEA75DE025EFB8B900BAE245 /* StudentsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA75DDF25EFB8B900BAE245 /* StudentsArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EEA75DCE25EED99300BAE245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEA75DD025EED99300BAE245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEA75DD725EEDFFA00BAE245 /* NameNickStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameNickStruct.swift; sourceTree = "<group>"; };
+		EEA75DDF25EFB8B900BAE245 /* StudentsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				EEA75DD725EEDFFA00BAE245 /* NameNickStruct.swift */,
+				EEA75DDF25EFB8B900BAE245 /* StudentsArray.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA75DE025EFB8B900BAE245 /* StudentsArray.swift in Sources */,
 				EEA75DC725EED99200BAE245 /* ViewController.swift in Sources */,
 				EEA75DC325EED99200BAE245 /* AppDelegate.swift in Sources */,
 				EEA75DD825EEDFFA00BAE245 /* NameNickStruct.swift in Sources */,
