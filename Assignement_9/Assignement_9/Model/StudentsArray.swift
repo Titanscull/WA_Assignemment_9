@@ -9,13 +9,14 @@ import Foundation
 
 var students = [
     NameNickStruct(name: "Artem", nickName: "@bazinga"),
-    NameNickStruct(name: "Evgeniy", nickName: "Evgeniy"),
+    NameNickStruct(name: "Evgeniy", nickName: "@homЪYAk"),
     NameNickStruct(name: "Maksym", nickName: "Maksym"),
-    NameNickStruct(name: "Oleksandr", nickName: "Oliinyk"),
+    NameNickStruct(name: "Oleksandr", nickName: "Alex Oliinyk"),
     NameNickStruct(name: "Viktor", nickName: "@viktorqube"),
     NameNickStruct(name: "Admin", nickName: "@service"),
     NameNickStruct(name: "Dmytro", nickName: "@dmytro"),
-    NameNickStruct(name: "Tanya", nickName: "@blackice")
+    NameNickStruct(name: "Tatiana", nickName: "@blackice"),
+    NameNickStruct(name: "Polter", nickName: "@geist")
 ]
 
 
