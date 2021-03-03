@@ -25,8 +25,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        students.sort(by: { $0.name <= $1.name })
+        
+//        students.sort(by: { $0.name <= $1.name })
+        
         mainTableView.dataSource = self
+        
+        
         
     }
 
@@ -44,6 +48,9 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "nameCell", for: indexPath)
+        
+            students.sort(by: { $0.name <= $1.name })
+        
         // MAIN LABEL
         cell.textLabel?.text = students[indexPath.row].name
         
