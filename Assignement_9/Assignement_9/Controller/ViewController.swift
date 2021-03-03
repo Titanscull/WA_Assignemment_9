@@ -20,11 +20,12 @@ class ViewController: UIViewController {
         NameNickStruct(name: "Admin", nickName: "@service"),
         NameNickStruct(name: "Dmytro", nickName: "@dmytro")
     ]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        students.sort(by: { $0.name <= $1.name })
         mainTableView.dataSource = self
         
     }
@@ -44,9 +45,11 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "nameCell", for: indexPath)
         // MAIN LABEL
-        cell.textLabel?.text = "Section: \(indexPath.section), IndePath.row:\(indexPath.row)"
+        cell.textLabel?.text = students[indexPath.row].name
         
-        cell.detailTextLabel?.text = "\(indexPath.row)"
+        cell.detailTextLabel?.text = students[indexPath.row].nickName
+        
+        
         // SECONDARY LABEL
 //        cell.detailTextLabel
 //            students[indexPath.row].name // students[indexPath.row].slackName
